@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".PostJournalActivity">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleLargeInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_to_change"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintVertical_bias="1"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toTopOf="@+id/image"/>
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="376dp"
+        android:layout_height="225dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       app:layout_constraintHorizontal_bias="0"
+        android:layout_marginStart="15dp"
+
+       app:layout_constraintBottom_toBottomOf="@id/image"
+       app:layout_constraintEnd_toEndOf="@id/image"
+       app:layout_constraintStart_toStartOf="@id/image"
+       app:layout_constraintTop_toTopOf="@+id/image"
+       >
+       <TextView
+           android:id="@+id/titleof"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/username"
+           android:textColor="@color/white"
+           android:textSize="12dp"
+
+           />
+       <TextView
+           android:id="@+id/timed"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/time"
+           android:textColor="@color/white"
+           android:textSize="12dp"
+           app:layout_constraintBottom_toTopOf="@id/username"
+           app:layout_constraintHorizontal_bias="0"
+           app:layout_constraintEnd_toEndOf="@id/image"
+           app:layout_constraintStart_toStartOf="@id/image"
+           app:layout_constraintTop_toTopOf="@+id/image"
+           />
+   </LinearLayout>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/thoughts"
+        android:hint="@string/Thoughts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:hint="@string/TITLE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintVertical_bias="0.125" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/save_journal"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintTop_toBottomOf="@id/thoughts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:id="@+id/save_journal"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

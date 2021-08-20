@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Journal Application</string>
+    <string name="emailid">ENTER EMAIL</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="PASSWORD">PASSWORD</string>
+    <string name="OR">or</string>
+    <string name="createaccount">CREaTE ACCOUNT</string>
+    <string name="username">USERNAME</string>
+    <string name="select_background">SELECT BACKGROUND</string>
+    <string name="userid">USERID</string>
+    <string name="thoughts">thoughts</string>
+    <string name="Thoughts">ENTER THOUGHTS</string>
+    <string name="TITLE">ENTER TITLE</string>
+    <string name="time">TIME</string>
+    <string name="save_journal">SAVE JOURNAL</string>
+    <string name="tap_to_change">Tap to change</string>
+    <string name="add">add</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="press_to_add_thoughts">Press "+" to add thoughts!</string>
+    <string name="listtitle">LIST TITLE</string>
+    <string name="dateadded">DATE ADDED</string>
+    <string name="listthoughts">THOUGHTS</string>
+    <string name="sfdh">-</string>
+</resources>
